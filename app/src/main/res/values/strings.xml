@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application</string>
+    <string name="new_subscription_activity_title">New Subscription</string>
+    <string name="main_activity_title">Subscriptions</string>
+    <string name="info">info</string>
+    <string name="search_title"><![CDATA[Search&#8230]]></string>
+    <string name="create_subscription">Add subscription by tapping the back button</string>
+</resources>
