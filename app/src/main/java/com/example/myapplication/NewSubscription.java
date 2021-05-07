@@ -17,6 +17,7 @@ import androidx.appcompat.widget.SearchView;
 public class NewSubscription extends AppCompatActivity {
 
     View blankview;
+    private Subscriptions subscriptionList[];
     private LinearLayout subscriptionContainer;
 
     @Override
@@ -61,9 +62,14 @@ public class NewSubscription extends AppCompatActivity {
         return true;
     }
 
-    public void searchBrandSubscriptions(String query) {
+    public void searchSubscriptions(String query) {
         boolean allResults = true;
+
+        for(int i = 0; i<subscriptionList.length; i++) {
+            String name = subscriptionList[i].getName().toLowerCase();
+            boolean same = name.contains(query.toLowerCase());
+            subscriptionContainer.getChildAt(i);
+            allResults &= !same;
+        }
     }
-
-
 }
