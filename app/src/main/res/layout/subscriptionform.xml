@@ -103,7 +103,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/deleteSubscription"
-                android:text="DELETE"
+                android:text="Add Subscription"
                 android:textColor="#ff009688" />
 
         </LinearLayout>
